@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Award, Code, Gamepad2, Trophy } from 'lucide-react';
+import { skills } from './About/skillsData'; // Importing skills data
 
 const achievements = [
   {
@@ -46,13 +47,14 @@ export default function About() {
               </p>
               
               <div className="grid grid-cols-3 gap-4 mb-6">
-                {["Unity", "Unreal", "Blender"].map((skill, index) => (
+                {skills.enginesFrameworks.map((skill, index) => (
                   <motion.div
                     key={index}
                     whileHover={{ scale: 1.05 }}
                     className="p-3 bg-gray-800 rounded-lg text-center"
                   >
-                    <p className="text-purple-400 font-medium">{skill}</p>
+                    <skill.icon className="w-6 h-6 text-purple-400" /> {/* Rendering skill icon */}
+                    <p className="text-purple-400 font-medium">{skill.name}</p> {/* Accessing skill name */}
                   </motion.div>
                 ))}
               </div>

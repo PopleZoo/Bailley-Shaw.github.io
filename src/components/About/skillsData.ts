@@ -22,10 +22,7 @@ export const skills = {
     { name: 'Flutter', icon: Layout },
     { name: 'Blender', icon: Cpu },
   ],
-  tools: [
-    { name: 'Github', icon: GithubIcon },
-    { name: 'Trello', icon: TrelloIcon },
-  ],
+  tools: [],
   fields: [
     { name: 'Gameplay', icon: Gamepad2 },
     { name: 'Tools', icon: Wrench },
