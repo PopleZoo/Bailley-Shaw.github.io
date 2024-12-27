@@ -45,15 +45,24 @@ export default function About() {
               A recent game development graduate, I have experience with Unity and Unreal Engine, creating engaging gameplay and solving technical challenges. 
               My projects demonstrate my ability to deliver polished results, meet deadlines, and continuously improve my skills.
               </p>
-              
-              <div className="grid grid-cols-3 gap-4 mb-6">
+              <div className="grid grid-cols-3 gap-4 mb-6"> {/* Engines and Frameworks */}
                 {skills.enginesFrameworks.map((skill, index) => (
                   <motion.div
                     key={index}
                     whileHover={{ scale: 1.05 }}
                     className="p-3 bg-gray-800 rounded-lg text-center"
                   >
-                    <skill.icon className="w-6 h-6 text-purple-400" /> {/* Rendering skill icon */}
+                    <p className="text-purple-400 font-medium">{skill.name}</p> {/* Accessing skill name */}
+                  </motion.div>
+                ))}
+              </div>
+              <div className="grid grid-cols-3 gap-4 mb-6"> {/* Engines and Frameworks */}
+                {skills.languages.map((skill, index) => (
+                  <motion.div
+                    key={index}
+                    whileHover={{ scale: 1.05 }}
+                    className="p-3 bg-gray-800 rounded-lg text-center"
+                  >
                     <p className="text-purple-400 font-medium">{skill.name}</p> {/* Accessing skill name */}
                   </motion.div>
                 ))}
