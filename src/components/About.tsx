@@ -5,21 +5,9 @@ import { skills } from './About/skillsData'; // Importing skills data
 const achievements = [
   {
     year: "2023",
-    title: "Game of the Year Nominee",
-    description: "Neon Nights nominated for indie GOTY",
+    title: "3 Million Downlods Past",
+    description: "Better Item Scan past 3 million downloads",
     icon: Trophy,
-  },
-  {
-    year: "2022",
-    title: "Unity Certified Developer",
-    description: "Professional certification in Unity development",
-    icon: Code,
-  },
-  {
-    year: "2021",
-    title: "Best Mobile Game",
-    description: "Winner at International Mobile Game Awards",
-    icon: Award,
   },
 ];
 
